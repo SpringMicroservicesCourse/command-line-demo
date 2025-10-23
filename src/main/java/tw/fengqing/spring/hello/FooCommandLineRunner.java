@@ -5,13 +5,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+// import java.util.Arrays;
+
 @Component
-// 設置執行順序，數字越小，執行越早
 @Order(1)
 @Slf4j
 public class FooCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("Foo");
+        // log.info("Command line args: {}", Arrays.toString(args));
     }
 }

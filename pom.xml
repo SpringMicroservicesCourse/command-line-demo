@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
-	<groupId>tw.fengqing.spring.springbucks.customer</groupId>
-	<artifactId>command-line</artifactId>
+	<groupId>tw.fengqing.spring.hello</groupId>
+	<artifactId>command-line-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>command-line</name>
+	<name>command-line-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,12 +19,10 @@
 	</properties>
 
 	<dependencies>
-		<!-- 為演示Spring Boot 的命令行功能，我們需要添加一個Web依賴 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

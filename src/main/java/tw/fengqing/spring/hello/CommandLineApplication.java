@@ -3,6 +3,7 @@ package tw.fengqing.spring.hello;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+// import org.springframework.boot.SpringApplication;
 
 @SpringBootApplication
 public class CommandLineApplication {
@@ -12,6 +13,6 @@ public class CommandLineApplication {
 				.web(WebApplicationType.NONE)
 				.run(args);
 		// 根據 application.properties 裡的配置來決定 WebApplicationType
-//		SpringApplication.run(CommandLineApplication.class, args);
+		// SpringApplication.run(CommandLineApplication.class, args);
 	}
 }

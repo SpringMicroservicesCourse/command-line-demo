@@ -7,7 +7,6 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-// 設置執行順序，數字越小，執行越早
 @Order(2)
 @Slf4j
 public class BarApplicationRunner implements ApplicationRunner {

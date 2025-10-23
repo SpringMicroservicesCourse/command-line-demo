@@ -9,9 +9,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.lang.NonNull;
 
-@Component
-// 設置執行順序，數字越小，執行越早
+// @Component
 @Order(3)
 @Slf4j
 public class ExitApplicationRunner implements ApplicationRunner, ApplicationContextAware {
@@ -25,7 +25,7 @@ public class ExitApplicationRunner implements ApplicationRunner, ApplicationCont
     }
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    public void setApplicationContext(@NonNull ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
 }
